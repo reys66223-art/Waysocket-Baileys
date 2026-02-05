@@ -1,7 +1,7 @@
 # ⚡ Electric Blue - Waysocket Baileys
 
 <p align="center">
-  <img src="https://i.postimg.cc/vH02735L/profile.jpg" alt="Electric Blue Logo" width="200" />
+  <img src="https://api.deline.web.id/5wuP7AZA0Q.jpg" alt="Electric Blue Logo" width="200" />
 </p>
 
 <p align="center">
