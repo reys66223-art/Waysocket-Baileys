@@ -1,16 +1,16 @@
 {
-    "name": "dilxzcode/bails",
+    "name": "waysocket-baileys",
     "version": "1.7.3",
     "description": "Have A Nice Day",
     "keywords": [
         "whatsapp-baileys"
     ],
-    "homepage": "https://github.com/dilxzcode/bails",
+    "homepage": "https://github.com/reys66223-art/Waysocket-Baileys",
     "repository": {
-        "url": "https://github.com/dilxzcode/bails"
+        "url": "https://github.com/reys66223-art/Waysocket-Baileys"
     },
     "license": "MIT",
-    "author": "dilxzcoders",
+    "author": "reys66223-art",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
@@ -73,7 +73,7 @@
         "ts-jest": "^27.0.3",
         "ts-node": "^10.8.1",
         "typedoc": "^0.24.7",
-        "typescript": "^4.6.4", 
+        "typescript": "^4.6.4",
         "json": "^11.0.0"
     },
     "peerDependencies": {
@@ -99,8 +99,8 @@
     "packageManager": "yarn@1.22.19",
     "engines": {
         "node": ">=20.0.0"
-    }, 
+    },
     "bugs": {
-      "url": "https://dilxzcode/bails/issues"
+        "url": "https://github.com/reys66223-art/Waysocket-Baileys/issues"
     }
-    }
+}
