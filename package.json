@@ -1,9 +1,14 @@
 {
     "name": "waysocket-baileys",
     "version": "1.7.3",
-    "description": "Have A Nice Day",
+    "description": "Electric Blue - WhatsApp WebSocket Library | Building the future, one line at a time ⚡",
     "keywords": [
-        "whatsapp-baileys"
+        "whatsapp",
+        "baileys",
+        "electric-blue",
+        "waysocket",
+        "whatsapp-bot",
+        "websocket"
     ],
     "homepage": "https://github.com/reys66223-art/Waysocket-Baileys",
     "repository": {

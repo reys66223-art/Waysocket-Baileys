@@ -1,75 +1,81 @@
-# WhatsApp Baileys
+# ⚡ Electric Blue - Waysocket Baileys
 
 <p align="center">
-  <img src="https://files.catbox.moe/369pux.jpg" alt="Thumbnail" />
+  <img src="https://i.postimg.cc/vH02735L/profile.jpg" alt="Electric Blue Logo" width="200" />
 </p>
 
-WhatsApp Baileys is an open-source library designed to help developers build automation solutions and integrations with WhatsApp efficiently and directly. Using websocket technology without the need for a browser, this library supports a wide range of features such as message management, chat handling, group administration, as well as interactive messages and action buttons for a more dynamic user experience.
+<p align="center">
+  <strong>🔌 WhatsApp WebSocket Library by Electric Blue Team</strong>
+</p>
 
-Actively developed and maintained, baileys continuously receives updates to enhance stability and performance. One of the main focuses is to improve the pairing and authentication processes to be more stable and secure. Pairing features can be customized with your own codes, making the process more reliable and less prone to interruptions.
-
-This library is highly suitable for building business bots, chat automation systems, customer service solutions, and various other communication automation applications that require high stability and comprehensive features. With a lightweight and modular design, baileys is easy to integrate into different systems and platforms.
-
----
-
-### Main Features and Advantages
-
-- Supports automatic and custom pairing processes
-- Fixes previous pairing issues that often caused failures or disconnections
-- Supports interactive messages, action buttons, and dynamic menus
-- Efficient automatic session management for reliable operation
-- Compatible with the latest multi-device features from WhatsApp
-- Lightweight, stable, and easy to integrate into various systems
-- Suitable for developing bots, automation, and complete communication solutions
-- Comprehensive documentation and example codes to facilitate development
+<p align="center">
+  <em>"Success is not final, failure is not fatal: it is the courage to continue that counts."</em>
+</p>
 
 ---
 
-## Development Status
+## 💡 About
 
-This repository is under active development.  
-Updates are focused on maintaining compatibility with recent WhatsApp changes, improving connection stability, and refining internal logic related to pairing and session persistence.
+**Electric Blue - Waysocket Baileys** adalah library open-source yang dirancang untuk membantu developer membangun solusi otomasi dan integrasi dengan WhatsApp secara efisien. Menggunakan teknologi websocket tanpa memerlukan browser, library ini mendukung berbagai fitur seperti manajemen pesan, penanganan chat, administrasi grup, serta pesan interaktif dan tombol aksi untuk pengalaman pengguna yang lebih dinamis.
 
-Most changes are incremental and aimed at long-running stability rather than experimental features.
+Library ini dikembangkan dan dipelihara secara aktif oleh **Electric Blue Team**, terus menerima update untuk meningkatkan stabilitas dan performa. Salah satu fokus utama adalah meningkatkan proses pairing dan autentikasi agar lebih stabil dan aman.
 
 ---
 
-## Getting Started
+## ✨ Fitur Utama
 
-Begin by installing the library via your preferred package manager, then follow the provided configuration guide. You can also utilize the ready-made example codes to understand how the features work. Use session storage and interactive messaging features to build complete, stable solutions tailored to your business or project needs.
+- ⚡ Mendukung proses pairing otomatis dan custom
+- 🔧 Memperbaiki masalah pairing sebelumnya yang sering menyebabkan kegagalan
+- 💬 Mendukung pesan interaktif, tombol aksi, dan menu dinamis
+- 🔄 Manajemen sesi otomatis yang efisien
+- 📱 Kompatibel dengan fitur multi-device terbaru WhatsApp
+- 🪶 Ringan, stabil, dan mudah diintegrasikan
+- 🤖 Cocok untuk bot, otomasi, dan solusi komunikasi lengkap
+- 📚 Dokumentasi lengkap dan contoh kode
 
-## How To Usage?
+---
+
+## 🚀 Getting Started
+
+### Installation
+
 ```json
 "dependencies": {
-  "@whiskeysockets/baileys": "github:dilxzcode/bails"
+  "waysocket-baileys": "github:reys66223-art/Waysocket-Baileys"
 }
 ```
-## Import
+
+### Import
+
 ```javascript
 const {
   default: makeWASocket
-} = require("@whiskeysockets/baileys");
+} = require("waysocket-baileys");
 ```
 
 ---
-# How To Connect To Whatsapp
-## With QR Code
+
+## 📡 Cara Connect ke WhatsApp
+
+### Dengan QR Code
+
 ```javascript
 const client = makeWASocket({
-  browser: ["Ubuntu", "Chrome", "20.0.0"],
+  browser: ["Electric Blue", "Chrome", "20.0.0"],
   printQRInTerminal: true
 });
 ```
 
-## Connect With Number
+### Connect Dengan Nomor
+
 ```javascript
 const {
   default: makeWASocket,
   fetchLatestWAWebVersion
-} = require("@whiskeysockets/baileys");
+} = require("waysocket-baileys");
 
 const client = makeWASocket({
-  browser: ["Ubuntu", "Chrome", "20.0.0"],
+  browser: ["Electric Blue", "Chrome", "20.0.0"],
   printQRInTerminal: false,
   version: fetchLatestWAWebVersion()
 });
@@ -80,9 +86,12 @@ const code = await client.requestPairingCode(number.trim());
 console.log("Pairing Code:", code);
 ```
 
-# Sending messages
+---
 
-## send orderMessage
+## 📨 Sending Messages
+
+### Send Order Message
+
 ```javascript
 const fs = require('fs');
 const nameImg = fs.readFileSync('./Image');
@@ -96,7 +105,8 @@ await client.sendMessage(m.chat, {
 }, { quoted: m });
 ```
 
-## send pollResultSnapshotMessage
+### Send Poll Result Message
+
 ```javascript
 await client.sendMessage(m.chat, {
   pollResultMessage: {
@@ -106,14 +116,15 @@ await client.sendMessage(m.chat, {
       { optionName: "Option B" }
     ],
     newsletter: {
-      newsletterName: "Example Newsletter",
+      newsletterName: "Electric Blue Newsletter",
       newsletterJid: "1@newsletter"
     }
   }
 });
 ```
 
-## send productMessage
+### Send Product Message
+
 ```javascript
 await client.relayMessage(m.chat, {
   productMessage: {
@@ -124,7 +135,7 @@ await client.relayMessage(m.chat, {
     retailerId: "RETAILER_ID",
     url: "https://example.com",
     body: "Product body text",
-    footer: "Example footer",
+    footer: "Electric Blue",
     buttons: [
       {
         name: "cta_url",
@@ -139,13 +150,31 @@ await client.relayMessage(m.chat, {
   }
 });
 ```
-## Thanks For Support
+
+---
+
+## 🏆 Credits
+
 ```javascript
 const credits = {
-  author: "dilxz",
-  source: "kiuur",
-  reference: "yuukey"
+  project: "Electric Blue - Waysocket Baileys",
+  author: "Electric Blue Team",
+  repository: "github.com/reys66223-art/Waysocket-Baileys",
+  motto: "Building the future, one line at a time ⚡"
 };
 
 module.exports = credits;
 ```
+
+---
+
+## 📜 License
+
+MIT License - Feel free to use and modify!
+
+---
+
+<p align="center">
+  <strong>⚡ Electric Blue Team ⚡</strong><br>
+  <em>Innovate. Create. Electrify.</em>
+</p>
